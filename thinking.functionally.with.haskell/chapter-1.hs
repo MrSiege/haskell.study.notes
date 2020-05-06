@@ -9,8 +9,8 @@ type Text = [Char]
 -- words v = [v]
 
 -- 转换大写字母为小写
-toLower :: Char -> Char
-toLower v = if (ord v >= 65) && (ord v <= 122)
+myToLower :: Char -> Char
+myToLower v = if (ord v >= 65) && (ord v <= 96)
   then chr ((ord v) + (ord 'a' - ord 'A'))
   else v
 
